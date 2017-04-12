@@ -1,0 +1,128 @@
+
+
+/* --------------- Navigation------------ */
+
+
+// nav {
+//     width: 650px;
+//     z-index: 1000;
+//     position: relative;
+
+//     img {
+//         height: 71px;
+//         order: 2;
+//     }
+
+//     ul {
+//         display: flex;
+//         justify-content: space-between
+//     }
+
+//     li {
+//         order: 2;
+//         padding-top: 30px;
+//     }
+
+// // sub
+//     .sub-nav {
+//         display: none;
+//         flex-direction: column;
+//         position: relative;
+
+//         li {
+//             padding-top: 10px;
+//         }
+//     }
+    
+
+//     a {
+//         font-family: 'Open Sans', sans-serif;
+//         font-size: 1.2em;
+//         color: white;
+//         border-bottom: 2px rgba(0, 0, 0, 0) solid;
+//         transition: all ease-in-out 0.1s;
+
+//         &:hover {color: white; border-bottom: 2px #FE5454 solid;}
+//         &:focus, &:active {color: white; border-bottom: 2px #FE5454 solid;}
+//         }
+// }
+
+// #nav-toggle {
+//     display: none;
+//     position: absolute;
+//     top: 20px;
+//     right: 20px;
+//     font-size: 3em;
+//     color: white;
+// }
+// #nav-toggle:hover {cursor: pointer;}
+
+
+// @media only screen and (max-width : 700px) {
+//     nav ul {
+//         flex-direction: column;
+//         justify-content: flex-start;
+//         align-items: center;
+//         /*min-height: 270px;*/
+//     }
+    
+//     .sub-nav {
+//             display: block;
+//         }
+
+//     nav {
+//         width: 100%;
+        
+//         li {
+//             display: none;
+//         }
+
+//         img {
+//             order: 1;
+//         }
+
+//         a {
+//             border-bottom: none; 
+//             border-bottom: 0;
+//             padding: 10px;
+//             font-size: 1.5em;
+
+//             &:hover {color: white; border-bottom: 0;}
+//             &:focus, &:active {color: white; border-bottom: 0;}
+//         }
+
+//     }
+
+//     #nav-toggle {
+//     display: block;
+//     }
+// }
+/* --------------- Instagram ------------ */
+
+#instagram div:nth-child(1) {
+    width: 100%; 
+    background: white; 
+    height: auto;
+    text-align: center;
+    }
+
+
+#instafeed img {
+    width: 25%;
+    display: inline;
+    vertical-align: bottom;
+}
+#instafeed a {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width : 600px) {
+    #instafeed img {
+        width: 50%;
+    }
+
+    #instafeed a:nth-child(n+7) {
+        display: none;
+    }
+}

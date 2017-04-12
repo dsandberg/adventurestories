@@ -1,0 +1,95 @@
+
+
+/* --------------- Font ------------ */
+
+
+
+
+
+
+/* --------------- Structure ------------ */
+
+	* { box-sizing: border-box; }
+
+
+	/*  Flex */
+	.flex {display: -webkit-box;display: -ms-flexbox;display: flex;}
+	.flex-row {-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row}
+	.flex-row-reverse {-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+	.flex-column {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
+	.flex-column-reverse {-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;}
+
+	.flex-wrap {-ms-flex-wrap: wrap;flex-wrap: wrap;}
+	.flex-wrap-reverse {-ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse;}
+
+	.flex-justify-start {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+	.flex-justify-end {-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
+	.flex-justify-center {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+	.flex-justify-between {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+	.flex-justify-around {-ms-flex-pack: distribute;justify-content: space-around;}
+
+	.flex-align-start {-webkit-box-align: start;-ms-flex-align: start;-ms-grid-row-align: flex-start;align-items: flex-start;}
+	.flex-align-end {-webkit-box-align: end;-ms-flex-align: end;-ms-grid-row-align: flex-end;align-items: flex-end;}
+	.flex-align-center {-webkit-box-align: center;-ms-flex-align: center;-ms-grid-row-align: center;align-items: center;}
+	.flex-align-baseline {-webkit-box-align: baseline;-ms-flex-align: baseline;-ms-grid-row-align: baseline;align-items: baseline;}
+	.flex-align-stretch {-webkit-box-align: stretch;-ms-flex-align: stretch;-ms-grid-row-align: stretch;align-items: stretch;}
+
+		/*  Flex Item */
+
+	/*  Align */
+	.align-left { text-align: left; }
+	.align-right { text-align: right; }
+
+	/* Margin */
+	.margin-center { margin: 0 auto; }
+	.margin-left { margin: 0 auto 0 0; }
+	.margin-right { margin: 0 0 0 auto; }
+
+	// padding
+
+	.padding-big {
+		padding: 70px;
+	}
+
+/* --------------- Grids ------------ */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+
+
+/*-------------------- Arrows --------------------*/
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgba(256, 256, 256, 1);
+  transition: all ease-in-out 0.1s;
+}
+
+.arrow-up {
+    margin: 70px auto 0 auto;
+
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgba(256, 256, 256, 1);
+    transition: all ease-in-out 0.1s;
+}
+.arrow-up:hover {
+    cursor: pointer;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 35px solid rgba(256, 256, 256, 1);
+}
+

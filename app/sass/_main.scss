@@ -1,0 +1,411 @@
+
+html, body {
+    height: 100%;
+    text-align: center;
+}
+
+
+/*-------------------- Landing --------------------*/
+#landing {
+     
+    background-size: cover;
+    background-position: center;
+    // background-attachment: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0 0 0;
+    color: white;
+
+
+}
+.main {
+        background-image: url(../images/adventurestories_header.jpg);
+    }
+#landing a {color:white;}
+#landing div {
+    text-align: center;
+}
+#roll-up {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 0px white solid;
+    transition: all 0.2s;
+}
+#roll-up:hover {
+    padding-bottom: 10;
+    border-bottom: 10px white solid;
+}
+
+#title:hover ~ #roll-up {
+    padding-bottom: 10;
+    border-bottom: 10px white solid;
+}
+
+@media only screen and (max-width : 400px) {
+    #landing {
+        h1 {
+            font-size: 4.2em;
+        }
+    }
+}
+
+/*-------------------- Inledning --------------------*/
+
+#inledning {
+    padding: 70px;
+
+    h1 {
+        display: none;
+    }
+}
+
+/*-------------------- Om oss --------------------*/
+
+
+#omoss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    text-align: center;
+}
+#omoss p {
+    font-size: 1.7em; 
+    /*font-family: 'Amatic SC', cursive*/
+}
+
+#omoss a {
+    margin-top: 20px;
+    font-size: 2em;
+    text-decoration: underline;
+    font-family: 'Amatic SC', cursive; 
+}
+#omoss a ::after {
+    content: 'test';
+}
+
+#omoss a:focus, #omoss a:active {
+    color: black;
+}
+#omoss a:hover {
+    color: #FE5454
+}
+
+#omoss-las-mer {
+    padding: 20px 0;
+    display: none;
+}
+
+@media only screen and (max-width : 700px) {
+    #omoss {
+        padding: 70px 5px;
+    }
+}
+
+/*-------------------- Events --------------------*/
+
+#events {
+
+    .event-wrapper {
+        overflow: hidden;
+    }
+
+    .event {
+        width: 33.333%;
+        height: 300px;
+        color: white;
+    }
+
+    .active {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    a {
+        color: white;
+        opacity: 0.5;
+        cursor: default;
+        overflow: hidden;
+    } 
+
+}
+
+
+.zoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+
+    div {
+        transition: all 0.6s ease-in-out;
+    }
+    h1 {
+        font-size: 8em;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:hover > div {
+    transform: scale(0.8);
+    }
+}
+
+#e1 .zoom {background-image: url('../images/event/adventurestories_are_header.jpg');}
+
+#e2 .zoom {background-image: url('../images/event/hiking_event.jpg');}
+
+#e3 .zoom {background-image: url('../images/event/surf_event.jpg');}
+
+
+@media only screen and (max-width : 700px) {
+
+    #events {
+
+        .event-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .event {
+            width: 100%;
+        }
+
+     }
+}
+
+/*-------------------- Budskap --------------------*/
+#budskap {
+    padding: 0 70px 70px 70px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.budskap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    img {
+        max-width: 400px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    p {
+         max-width: 400px;
+    }
+}
+
+
+@media only screen and (max-width : 800px) {
+
+    #budskap {
+        padding: 70px 5px;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+
+    #budskap {
+        padding: 70px 5px;
+        overflow: hidden;
+    }
+
+    .budskap img:nth-child(odd) {
+        margin-left: -260px;
+    }
+    .budskap img:nth-child(even) {
+        margin-right: -260px;
+    }
+}
+
+/*-------------------- Personer (Vi) --------------------*/
+
+/*headline*/
+#vi {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 70px 70px 70px;
+}
+
+/*person wrapper*/
+.person {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+
+    width: 30%;
+
+    p {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 20px 0 0 10px; 
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+@media only screen and (max-width : 800px) {
+
+    #vi {
+        padding: 70px 5px;
+    }
+
+    .person {
+
+        img {
+            max-width: 200px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width : 700px) {
+
+    #vi {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .person {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+}
+
+/*-------------------- Citat --------------------*/
+blockquote {
+    padding: 70px;
+    text-align: center;
+}
+
+blockquote p {
+    font-size: 3em; 
+    font-family: 'Amatic SC', cursive; 
+    font-weight: 400;
+}
+
+@media only screen and (max-width : 700px) {
+    blockquote {padding: 70px 5px;}
+}
+
+@media only screen and (max-width : 500px) {
+    blockquote p {font-size: 2.5em;}
+    blockquote h3 {font-size: 3em;}
+}
+
+
+
+/*-------------------- Kontakt --------------------*/
+#kontakt {
+    display: flex;
+    overflow: hidden;
+}
+
+/*kontakt bilden*/
+.kontakt-bild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 70%;
+    height: 400px;
+    
+    /*bildens url*/
+    background-image: url(../images/kontakt.jpg);
+    background-position: center;
+    background-size: cover;
+
+    /*formen på kontakt bilden*/
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+/*kontakt logo bild*/
+.kontakt-bild img {
+    width: 300px;
+}
+
+/*kontakt info, tel och mejl*/
+.kontakt-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media only screen and (max-width : 700px) {
+    #kontakt {
+        flex-direction: column;
+    }
+
+    .kontakt-info {
+        margin: 20px 0;
+    }
+
+    .kontakt-bild {
+       width: 100%;
+       clip-path: none;
+        -webkit-clip-path: none;
+    }
+}
+
+
+/*-------------------- footer --------------------*/
+footer {
+    margin: 70px 0;
+    width: 100%;
+
+    div {
+        margin: 0 auto;
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+
+        a img {
+            margin: 20px;
+            max-width: 200px;
+            max-height: 40px;
+            height: auto;
+        }
+    }
+}

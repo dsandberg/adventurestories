@@ -1,0 +1,123 @@
+
+html, body {
+    height: 100%;
+    color: black;
+}
+
+* { box-sizing: border-box; }
+
+// ----- Color
+
+$main-text: black;
+$text: white;
+$contrast: #F16802;
+
+// ---- Typo
+
+body {
+    font-size: 62.5%;
+    text-align: center;
+}
+
+// load bromello font
+@font-face { font-family: bromello; src: url(../fonts/bromello.ttf); }
+
+$font-one: 'Amatic SC', cursive;
+$font-two: 'Open Sans Condensed', sans-serif;
+$font-three: 'bromello', cursive;
+
+h1 {font-size: 6em; font-family: 'Amatic SC', cursive; letter-spacing: 5px; font-weight: 400; margin: 10px; white-space: nowrap;}
+h2 {font-size: 4em; font-family: 'Amatic SC', cursive; font-weight: 400; margin: 5px;}
+h3 {font-size: 3em; font-family: 'Open Sans Condensed', sans-serif; font-weight: 300; margin: 3px; text-transform: uppercase; white-space: nowrap;}
+h4 {font-size: 3em; font-family: 'bromello', cursive; font-weight: 400; margin: 5px;}
+h5 {font-size: 2.5em; font-family: 'Amatic SC', cursive; font-weight: 400;}
+h6 {font-size: 1.5em; font-family: 'Amatic SC', cursive; font-weight: 400;}
+
+p {
+    font-size: 1.8em; 
+    font-weight: 300;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none; 
+    font-family: 'Open Sans', sans-serif;
+    color: black; 
+    transition: all ease-in-out 0.1s;
+}
+a:focus, a:active {
+    text-decoration: none; 
+    color: white; 
+    }
+a:hover {color: $contrast}
+
+hr {
+    width: 40px;
+    border: 0;
+    height: 2px;
+    background: $contrast;
+    margin: 10px auto;
+}
+
+.hr-left {
+   margin: 10px auto 10px 0; 
+}
+
+span {color: $contrast}
+
+.big {
+    font-size: 8em;
+}
+@media only screen and (max-width : 500px) {
+    .big {
+       font-size: 5.5em; 
+    }
+}
+
+strong {
+    color: #555;
+}
+
+.medium {
+    font-size: 3em;
+}
+
+.small {
+    font-size: 2em;
+}
+
+.xsmall {
+    font-size: 1.5em;
+}
+
+.fa {
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+// ------------ Layout
+.margin-top {
+    margin-top: 40px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frame {
+    border: 3px $contrast solid;
+    padding: 20px;
+    margin: 20px;
+    flex-shrink: 0;
+
+    &:hover {
+        background-color: rgba(256, 256, 256, 0.3);
+    }
+}
+
+.max-thousand {
+    max-width: 1000px;
+}
